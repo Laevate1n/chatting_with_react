@@ -15,7 +15,7 @@ const io = socketIO(server,{
   },
 });
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://avrora:Walkingdead18.@192.168.0.70:27017/?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://your_own_username:your_own_password@192.168.0.70:27017/?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
